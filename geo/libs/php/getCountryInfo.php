@@ -7,8 +7,8 @@
 
 	$executionStartTime = microtime(true);
 
-	$url='http://api.geonames.org/findNearbyWikipediaJSON?formatted=true&lang=' . '&title=' . $_REQUEST['title'] . '&username=flightltd&style=full';
-
+	$url='http://api.geonames.org/findNearbyWikipediaJSON?formatted=true&lat=' . $_REQUEST['lat'] . '&lng=' . $_REQUEST['lng'] . '&username=jamesacrawfodrd&style=full';
+	//http://api.geonames.org/findNearbyWikipediaJSON?formatted=true&lat=47&lng=9&username=jamesacrawford&style=full
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
