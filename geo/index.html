@@ -19,44 +19,69 @@
 
 	<body>
 
-		<h1>Country Wiki</h1>
-
-		<select id="selTitle">
-			<option value="Glärnisch">Glärnisch</option>
-          <option value="Oberblegisee">Oberblegisee</option>
-          <option value="Rüchigrat">Rüchigrat</option>
-          <option value="Klöntalersee">Klöntalersee</option>
-          <option value="Vorder Glärnisch">Vorder Glärnisch</option>
-		</select>
-
-		<select id="selLanguage">
-			<option value="en">English</option>
-			<option value="fr">Francais</option>
-			<option value="de">Deutsche</option>
-		</select>
-
 		
-<table style="width:100%">
+<table style="width:75%">
 	<tr>
-	  <th>Company</th>
-	  <th>Contact</th>
-	  <th>Country</th>
+	  <th>API name</th>
+	  <th>Options</th>
+	  <th>Start</th>
 	</tr>
 	<tr>
-	  <td>Alfreds Futterkiste</td>
-	  <td>Maria Anders</td>
-	  <td>Germany</td>
+	  <td>Find nearby Wikipedia Entries</td>
+	  <td><select id="selLanguage">
+		<option value="en">English</option>
+		<option value="fr">Francais</option>
+		<option value="de">Deutsche</option>
+	</select>
+	<select id="selTitle">
+		<option value="Glärnisch">Glärnisch</option>
+	  <option value="Oberblegisee">Oberblegisee</option>
+	  <option value="Rüchigrat">Rüchigrat</option>
+	  <option value="Klöntalersee">Klöntalersee</option>
+	  <option value="Vorder Glärnisch">Vorder Glärnisch</option>
+	</select>
+</td>
+	  <td><button id="btnRun">Run</button></td>
 	</tr>
 	<tr>
 	  <td>Centro comercial Moctezuma</td>
-	  <td>Francisco Chang</td>
-	  <td>Mexico</td>
+	  <td><select id="selLanguage">
+		<option value="en">English</option>
+		<option value="fr">Francais</option>
+		<option value="de">Deutsche</option>
+	</select>
+	<select id="selTitle">
+		<option value="Glärnisch">Glärnisch</option>
+	  <option value="Oberblegisee">Oberblegisee</option>
+	  <option value="Rüchigrat">Rüchigrat</option>
+	  <option value="Klöntalersee">Klöntalersee</option>
+	  <option value="Vorder Glärnisch">Vorder Glärnisch</option>
+	</select>
+</td>
+	  <td><button id="btnRun">Run</button></td>
 	</tr>
+	<tr>
+		<td>Centro comercial Moctezuma</td>
+		<td><select id="selLanguage">
+		  <option value="en">English</option>
+		  <option value="fr">Francais</option>
+		  <option value="de">Deutsche</option>
+	  </select>
+	  <select id="selTitle">
+		<option value="Glärnisch">Glärnisch</option>
+	  <option value="Oberblegisee">Oberblegisee</option>
+	  <option value="Rüchigrat">Rüchigrat</option>
+	  <option value="Klöntalersee">Klöntalersee</option>
+	  <option value="Vorder Glärnisch">Vorder Glärnisch</option>
+	</select>
+  </td>
+		<td><button id="btnRun">Run</button></td>
+	  </tr>
   </table>
 
 		
 
-		<button id="btnRun">Run</button>
+		
 
 		<br><br>
 
@@ -66,7 +91,7 @@
 
 				<tr>
 					<td align="right">
-						Summary: 
+						Results: 
 					</td>
 					<td id="txtSummary">
 						
