@@ -5,7 +5,8 @@ $('#btnRun').click(function() {
 		type: 'POST',
 		dataType: 'json',
 		data: {
-			title: $('#selTitle').val()
+			title: $('#selTitle').val(),
+			lang: $('#selLanguage').val()
 			
 			
 		},
@@ -16,6 +17,7 @@ $('#btnRun').click(function() {
 			if (result.status.name == "ok") {
 
 				$('#txtSummary').html(result['data'][0]['summary']);
+				$('#txtLanguages').html(result['data'][0]['languages']);
 				
 
 			}
