@@ -1,7 +1,7 @@
 $('#btnRun').click(function() {
 
 	$.ajax({
-		url: "geo/libs/php/findnearbyWiki.php",
+		url: "C:\Users\Family\Documents\GitHub\geo\geo\libs\php\findnearbyWiki.php",
 		type: 'POST',
 		dataType: 'json',
 		data: {
