@@ -9,6 +9,10 @@
 
 	$url='http://api.geonames.org/findNearbyWikipediaJSON?formatted=true&lat=' . $_REQUEST['lat'] . '&title=' . $_REQUEST['title'] . '&jamesacrawford=flightltd&style=full';
 	//http://api.geonames.org/findNearbyWikipediaJSON?formatted=true&lat=47&lng=9&username=jamesacrawford&style=full
+    //http://api.geonames.org/earthquakesJSON?formatted=true&north=44.1&south=-9.9&east=-22.4&west=55.2&username=jamesacrawford&style=full
+    //http://api.geonames.org/neighbourhoodJSON?formatted=true&lat=40.78343&lng=-73.96625&username=jamesacrawford&style=full
+    
+    //
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
